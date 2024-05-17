@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+<body>
+    <style>
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        img{
+margin: 10px auto;
+width: 400px;
+height: 400px;
+        }
+        h1{
+            text-align: center;
+            color: blueviolet;
+            text-decoration: underline 2px blue;
+        }
+        img:nth-child(2n){
+            border: green 2px solid;
+        }
+        img:nth-child(2n-1){
+            border: red 2px solid;
+        }
+    </style>
+    <div class="container">   <h1>Gallery</h1>
+    <div class="gallery">
+     
+        <img src="img/messi.jfif" alt="messi">
+        <img src="img/cr7.jpg" alt="Cr7">
+        <img src="img/neymar.jpg" alt="Neymar" >
+        <img src="img/sunil.webp" alt="Sunil">
+        <img src="img/haaland.jpg" alt="haaland">
+        <img src="img/cr7.jpg" alt="messi" >
+        <img src="img/messi.jfif" alt="messi" >
+        <img src="img/sunil.webp" alt="messi" >
+        <img src="img/haaland.jpg" alt="messi" >
+        <img src="img/neymar.jpg" alt="messi" >
+
+    </div>
+</div>
+</body>
+</html>
