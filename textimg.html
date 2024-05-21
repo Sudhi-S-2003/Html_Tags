@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-background image</title>
+</head>
+<body>
+    <style>
+        body{
+            background:wheat;
+        }
+        h1{
+            margin: 0%;
+            font-size: 80vh;
+           text-align: center;
+            background: url(img/messi.gif);
+            background-size: cover;
+            color: transparent;
+            background-position:center ;
+            background-clip:text;
+            -webkit-text-stroke: 2px rgb(0, 255, 38);
+        }
+    </style>
+   
+   <marquee behavior="alternate" direction="" scrollamount="30" ><h1>Messi</h1>
+   </marquee>
+</body>
+</html>
