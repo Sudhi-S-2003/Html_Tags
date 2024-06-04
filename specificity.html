@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <link rel="stylesheet" href="css/specificity.css">
+</head>
+<body>
+    <style>
+.third{
+    background-color: blue;
+}
+.imp{
+    background-color: green !important;
+}
+    </style>
+    <div id="second" class="third fourth imp" style="background-color: red;"> <!-- This div will have a green background -->
+        !important is more priority ✅
+        <br>
+        inline - first 
+        <br>
+        id  - second
+        <br>
+        internal - third
+        <br>
+        class - fourth
+        <br>
+        html element - fiveth
+    </div>
+    <div id="second" class="third fourth" style="background-color: red;"> <!-- This div will have a red background -->
+        inline - first ✅
+        <br>
+        id  - second
+        <br>
+        internal - third
+        <br>
+        class - fourth
+        <br>
+        html element - fiveth
+    </div>
+    <div id="second" class="third fourth" > <!-- This div will have a blueviolet background -->
+        inline - first
+        <br>
+        id  - second ✅
+        <br>
+        internal - third
+        <br>
+        class - fourth
+        <br>
+        html element - fiveth
+    </div>
+    <div  class="third fourth" >
+        inline - first
+        <br>
+        id  - second
+        <br>
+        internal - third✅
+        <br>
+        class - fourth
+        <br>
+        html element - fiveth
+    </div>
+    <div  class="fourth" ><!-- This div will have a light blue background -->
+        inline - first
+        <br>
+        id  - second
+        <br>
+        internal - third
+        <br>
+        class - fourth✅
+        <br>
+        html element - fiveth
+    </div>
+    
+    <div> <!-- This div will have a light green background -->
+        inline - first
+        <br>
+        id  - second
+        <br>
+        internal - third
+        <br>
+        class - fourth
+        <br>
+        html element - fiveth✅
+    </div>
+</body>
+</html>

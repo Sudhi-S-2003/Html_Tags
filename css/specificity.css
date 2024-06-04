@@ -1,0 +1,12 @@
+#second {
+    background-color: #23cee5; /* Specificity: ID Selector (highest) */
+}
+
+.fourth {
+    background-color: #e2a60e; /* Specificity: Class Selector */
+}
+
+div {
+    height: 100px;
+    background-color: #0fe61e; /* Specificity: Element Selector (lowest) */
+}
